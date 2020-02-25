@@ -34,9 +34,13 @@
         {
 
             document.getElementById("isAmic").innerHTML = num1+ " and " + num2 + " are amicable";
+            document.getElementById("showfac1").innterHTML = "First Number Factors:" + showFactors(num1);
+            document.getElementById("showfac2").innterHTML = "Second Number Factors:" + showFactors(num2);
             return true;
         }
         document.getElementById("isAmic").innerHTML = num1+ " and " + num2 + " are not amicable";
+        document.getElementById("showfac1").innterHTML = "First Number Factors:" + showFactors(num1);
+            document.getElementById("showfac2").innterHTML = "Second Number Factors:" + showFactors(num2);
         return false;
     }
     
@@ -108,7 +112,8 @@
         <button  form ="ami" onclick="buttonClick()">Test Amicable</button> 
         
         <p id="isAmic"></p>
-       
+        <p id="showfac1"></p> 
+        <p id="showfac2"></p> 
 
         <!-- <button onclick="addfactors([1111,0, 111, 11, 1])">testaddfac</button> 
        <button onclick="showFactors()">testshowfac</button> 
